@@ -1,0 +1,25 @@
+{
+  "name": "warmup-backend",
+  "version": "1.0.0",
+  "description": "warm challenge JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "js",
+    "express",
+    "sequelize",
+    "mysql"
+  ],
+  "author": "cordobacesar29@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.2"
+  }
+}
