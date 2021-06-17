@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-
+const CategoryModel = require('./models/categories');
 const BlogModel = require('./models/blogPosts');
 
 const sequelize = new Sequelize('5jGaN0Luov', '5jGaN0Luov', 'YzUZtwqp7E', {
@@ -8,6 +8,7 @@ const sequelize = new Sequelize('5jGaN0Luov', '5jGaN0Luov', 'YzUZtwqp7E', {
 });
 
 const Blog = BlogModel(sequelize, Sequelize);
+const Category = CategoryModel(sequelize, Sequelize);
 
 sequelize.sync({force: false})
 .then(() =>{
@@ -15,5 +16,6 @@ sequelize.sync({force: false})
 });
 
 module.exports = {
-    Blog
+    Blog,
+    Category
 }
